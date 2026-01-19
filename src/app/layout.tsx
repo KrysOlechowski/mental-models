@@ -27,7 +27,22 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
+        <header className="border-b border-black/5 bg-white/70">
+          <div className="mx-auto flex w-full max-w-5xl flex-col gap-1 px-6 py-6">
+            <p className="text-lg font-semibold text-slate-900">
+              Mental Models Quiz
+            </p>
+            <p className="text-sm text-slate-600">
+              Ćwiczenia nad modelami myślenia — bez punktów, bez rywalizacji.
+            </p>
+          </div>
+        </header>
         {children}
+        <footer className="border-t border-black/5 bg-white/70">
+          <div className="mx-auto flex w-full max-w-5xl items-center px-6 py-6 text-sm text-slate-500">
+            Ucz się modeli, nie wyników.
+          </div>
+        </footer>
       </body>
     </html>
   );
